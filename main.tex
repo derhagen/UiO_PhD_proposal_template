@@ -1,4 +1,7 @@
-\documentclass{article}
+% !TEX TS-program = xelatex
+% !TEX encoding = UTF-8 Unicode
+
+\documentclass{scrarticle}
 
 % Language setting
 % Replace `english' with e.g. `spanish' to change the document language
@@ -14,8 +17,8 @@
 \usepackage[colorlinks=true, allcolors=blue]{hyperref}
 
 % Bibliography
-\usepackage[backend=biber]{biblatex} %Imports biblatex package
-\addbibresource{sample.bib} %Import the bibliography file
+%\usepackage[backend=biber]{biblatex} %Imports biblatex package
+%\addbibresource{sample.bib} %Import the bibliography file
 
 % Paragraph formatting
 \setlength{\parindent}{0em}
@@ -23,7 +26,7 @@
 
 
 \title{Template for PhD Project Description, Department of Informatics, UiO}
-\author{Hagen Echzell}
+\author{Author name}
 
 \begin{document}
 \maketitle
@@ -36,60 +39,61 @@ The PhD degree at the Department of Informatics is a supervised study requiring 
 
 \textbf{The project description should be between 4 – 10 pages, and contain the following nine elements:}
 
-\textbf{1. Project title}
+\section{Project title}
 
-\textbf{2. Main objective and summary of the project}
+\section{Main objective and summary of the project}
 
 Present the main objective and a brief summary, explaining how you intend to attain your goal.
 
-\textbf{3. Project background and scientific basis}
+\section{Project background and scientific basis}
 
 Provide a brief survey of existing research efforts and scientific basis, preferably with references to scientific literature. If your project is a part of a larger research effort requiring coordination, explain specifically your planned contributions within the larger framework.
 
-\textbf{4. Research questions and scientific challenges}
+\section{Research questions and scientific challenges}
 
 Outline your research questions and scientific challenges. Explain their scientific foundation and your approach to address them. Describe your ambitions of reaching beyond the state-of- the-art and how to reach these goals.
 
-\textbf{5. Scientific method}
+\section{Scientific method}
 
 Outline your method for reaching your scientific goals. Describe how you are planning to use empirical, analytical or other methods for your research. Please state how these methods relate to the expected scientific contributions of the thesis. If applicable, describe the source of your data.
 
-\textbf{6. Expected impact}
+\section{Expected impact}
 
 Describe the expected impact of the research on science, innovation and society.
 
-\textbf{7. Ethics}
+\section{Ethics}
 
-Describe any research-ethical challenges related to your project. Use the applicable research- ethical guidelines of the Norwegian Research Ethical Committees1 to identify such challenges and propose means to address these. Also, check if your project requires notification to the Data Protection Official for Research2. Candidates doing fieldwork abroad should check if they also have to register their project with the applicable authorities there. All PhD candidates registered at IFI, independent of their nationality or the country where they do fieldwork, need clearance from the Norwegian Data Authority represented by the NSD (http://www.nsd.uib.no) if they are going to process personal data. NSD provides a simple tool to assess if a notification is necessary as well as the notification form (https://nsd.no/personvernombud/en/notify/index.html).
+Describe any research-ethical challenges related to your project. Use the applicable research- ethical guidelines of the Norwegian Research Ethical Committees\footnote{The guidelines of the National Committee for Research Ethics in Science and Technology are central here. Also the guidelines of NESH and the guidelines on Internet Research may be applicable. See the Norwegian Research Ethical Committees: https://www.etikkom.no/en/} to identify such challenges and propose means to address these. Also, check if your project requires notification to the Data Protection Official for Research\footnote{Data Protection Official for Research: http://www.nsd.uib.no/nsd/english/pvo.html}. Candidates doing fieldwork abroad should check if they also have to register their project with the applicable authorities there. All PhD candidates registered at IFI, independent of their nationality or the country where they do fieldwork, need clearance from the Norwegian Data Authority represented by the NSD (http://www.nsd.uib.no) if they are going to process personal data. NSD provides a simple tool to assess if a notification is necessary as well as the notification form (https://nsd.no/personvernombud/en/notify/index.html).
 
-\textbf{8. Project timeline}
+\section{Project timeline}
 
 Outline a research plan for each semester including course-work, scientific contributions, and planned publications. Preferably, indicate publication channel as well. Indicate mandatory/teaching duties (25\%) when applicable as well as planned visits to other research institutions (national or international). We use the project timeline to assess progress during the third semester evaluation.
 
 
 We recommend you to summarize the research plan in a table to make it easy to evaluate progress. This can for example look like:
 
-Semester -- Activities and milestones\\
-2nd -- ...\\
-3rd -- 3rd semester reporting.\\
-4th -- ...\\
-5th ... ......\\
+\begin{table}[]
+	\begin{tabular}{ll}
+		\hline
+		\textbf{Semester} & \textbf{Activities and milestones} \\ \hline
+		1st & \begin{tabular}[c]{@{}l@{}}Research Activities\\ Courses\\ Conference attendance\\ Submission of publications (theme, publication channel)\\ Research stays abroad\\ Mandatory duties\\ Etc.\end{tabular} \\ \hline
+		2nd & ... \\ \hline
+		3rd & \begin{tabular}[c]{@{}l@{}}3rd semester reporting\\ ...\end{tabular} \\ \hline
+		4th & ... \\ \hline
+		5th & ... \\ \hline
+		... & ... \\ \hline
+	\end{tabular}
+\end{table}
 
-\textbf{9. Project organisation and cooperation}
+\section{Project organisation and cooperation}
 
 The principal supervisor should provide an overview of knowledge / expertise each supervisor will contribute, how they collectively cover the academic field of the project, and how the members of the supervisory team will cooperate. One should also describe how the support of the candidate will be maintained if one of the members has to vacate her/his post and therefore has to be replaced. Finally, the robustness of the research group should be addressed; i.e., how other academic staff and their PhD-students and PhD projects support the new project and how the new project fits into the ongoing research activity.
 
-\textbf{10. Literature references}
+\section{Literature references}
 
 List applicable references.
 
-\textsuperscript{1} The guidelines of the National Committee for Research Ethics in Science and Technology are central here. Also the guidelines of NESH and the guidelines on Internet Research may be applicable. See the Norwegian Research Ethical Committees: https://www.etikkom.no/en/
 
-\textsuperscript{2}  Data Protection Official for Research: http://www.nsd.uib.no/nsd/english/pvo.html
-
-
-
-
-\printbibliography %Prints bibliography
+%\printbibliography %Prints bibliography
 
 \end{document}
